@@ -1,28 +1,15 @@
-<template>
-  <div id="app">
-    <h1>{{ msg }}</h1>
-    <h2>Vue测试</h2>
-    <input type="text" v-model="message">
-    <span v-text="message"></span>
-  </div>
-</template>
-
 <script>
-export default {
-  data () {
-    return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
-      msg: 'Hello Vue! '
+  import Github from './components/Github.vue'
+  export default {
+    name: 'App',
+    components: {
+      Github
     }
   }
-}
 </script>
 
-<style>
-body {
-  font-family: Helvetica, sans-serif;
-}
-</style>
+<template>
+    <div id="app">
+      <github><github>
+    </div>
+</template>
